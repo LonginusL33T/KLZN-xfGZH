@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="keli">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
+    <title>智慧消防</title>
+	<script type="text/javascript">
+		window._AMapSecurityConfig = {
+			securityJsCode: '8351556b2a8e50877496a64302ac259f'
+		}
+	</script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=21541a557b78d6c46ff5c77396f1dc99&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <style type="text/css">
+    .amap-logo {
+        display: none;
+        opacity: 0 !important;
+    }
+    .amap-copyright {
+        opacity: 0;
+    }
+    .amap_lib_placeSearch_poi {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but
+            <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
